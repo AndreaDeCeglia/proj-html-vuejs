@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!-- here there are my 3 main components -->
-
+    <div v-for=" n in socialsArray" :key="n" > {{el}} </div>
     <!-- HeaderComp -->
     <HeaderComp/>
 
@@ -56,6 +56,21 @@ export default {
           links: [
             'Udemy Affiliate', 'Light LMS', 'Dark LMS', 'Offline Courses', 'Architecture', 'Online Accademy', 'Course Hub', 'Classic LMS', 'Private Instructor', 'RTL Demo', 'BuddyPress Demo', 'Distance Learning', 'Cooking Courses',
           ],
+        },
+      ],
+
+      //Array containing Socials' logos
+      socialsArray: [
+        '<font-awesome-icon icon="fa-brands fa-linkedin" />',
+        <font-awesome-icon icon="fa-brands fa-instagram" />,
+        <font-awesome-icon icon="fa-brands fa-facebook" />,
+        <font-awesome-icon icon="fa-brands fa-twitter" />,
+      ],
+
+      //Array containing new courses specificies
+      newCoursesArray: [
+        {
+          
         },
       ],
     }
