@@ -70,7 +70,52 @@ export default {
       //Array containing new courses specificies
       newCoursesArray: [
         {
-          
+          image:'',
+          title: 'How to be a DJ? Make Electronic Music',
+          type: 'Electronic',
+          level: 'Advanced',
+          lectures: '3 Lectures',
+          duration: '20 hours',
+        },
+        {
+          image:'',
+          title: 'Fashion Photography from professional',
+          type: 'Fashion',
+          level: 'Advanced',
+          lectures: '4 Lectures',
+          duration: '12 hours',
+        },
+        {
+          image:'',
+          title: 'Graphic Design Basics Masterclass',
+          type: 'Communication',
+          level: 'Intermediate',
+          lectures: '3 Lectures',
+          duration: '10 hours',
+        },
+        {
+          image:'',
+          title: 'Interior design concepts Masterclass',
+          type: 'Art',
+          level: 'Intermediate',
+          lectures: '4 Lectures',
+          duration: '8 hours',
+        },
+        {
+          image:'',
+          title: 'Road Bike Manual or How to Be a Champion',
+          type: 'Bicycling',
+          level: 'Beginner',
+          lectures: '3 Lectures',
+          duration: '4 hours',
+        },
+        {
+          image:'',
+          title: 'Real Things Art Painting by Jason Ni',
+          type: 'Art',
+          level: 'Intermediate',
+          lectures: '5 Lectures',
+          duration: '9 hours',
         },
       ],
     }
@@ -84,5 +129,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  min-width: 100vh;
 }
 </style>
