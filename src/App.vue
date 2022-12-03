@@ -2,7 +2,7 @@
   <div id="app">
     <!-- here there are my 3 main components -->
     <div v-for=" n in socialsArray" :key="n" > {{el}} </div>
-    {{fa-linkedin}}
+    
     <!-- HeaderComp -->
     <HeaderComp/>
 
@@ -144,6 +144,30 @@ export default {
           explanation: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, pariatur iure corrupti voluptate incidunt nulla excepturi voluptas, consequuntur numquam unde eaque officiis minima maxime nobis voluptatum ab, saepe earum recusandae.',
         },
       ],
+      
+      //array containing statistics about the courses
+      coursesNumbersArray: [
+        {
+          icon: 'fa-regular fa-user-group',
+          howMuch: '7500',
+          what: 'Online Learner',
+        },
+        {
+          icon: 'fa-regular fa-film',
+          howMuch: '55',
+          what: 'Video Courses',
+        },
+        {
+          icon: 'fa-regular fa-images',
+          howMuch: '1025',
+          what: 'Sliders Images',
+        },
+        {
+          icon: 'fa-regular fa-thumbs-up',
+          howMuch: '3380',
+          what: 'Excellent Reviews',
+        },
+      ],
     }
   },
 }
@@ -155,6 +179,5 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  min-width: 100vh;
 }
 </style>
