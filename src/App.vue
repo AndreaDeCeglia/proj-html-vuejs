@@ -2,6 +2,7 @@
   <div id="app">
     <!-- here there are my 3 main components -->
     <div v-for=" n in socialsArray" :key="n" > {{el}} </div>
+    {{fa-linkedin}}
     <!-- HeaderComp -->
     <HeaderComp/>
 
@@ -59,15 +60,16 @@ export default {
         },
       ],
 
-      //Array containing Socials' logos
+      //Array containing icons
       socialsArray: [
-        '<font-awesome-icon icon="fa-brands fa-linkedin" />',
-        <font-awesome-icon icon="fa-brands fa-instagram" />,
-        <font-awesome-icon icon="fa-brands fa-facebook" />,
-        <font-awesome-icon icon="fa-brands fa-twitter" />,
+        'fa-brands fa-linkedin',
+        'fa-brands fa-instagram',
+        'fa-brands fa-facebook',
+        'fa-brands fa-twitter',
       ],
 
       //Array containing new courses specificies
+      //just photos still miss
       newCoursesArray: [
         {
           image:'',
@@ -116,6 +118,30 @@ export default {
           level: 'Intermediate',
           lectures: '5 Lectures',
           duration: '9 hours',
+        },
+      ],
+
+      //whyMyCoursesArray with courses' specificies
+      whyMyCoursesArray: [
+        {
+          logo: 'fa-regular fa-thumbs-up',
+          skill: 'Entrapreneurship',
+          explanation: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, pariatur iure corrupti voluptate incidunt nulla excepturi voluptas, consequuntur numquam unde eaque officiis minima maxime nobis voluptatum ab, saepe earum recusandae.',
+        },
+        {
+          logo: 'fa-regular fa-rocket',
+          skill: 'Accelerated learning',
+          explanation: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, pariatur iure corrupti voluptate incidunt nulla excepturi voluptas, consequuntur numquam unde eaque officiis minima maxime nobis voluptatum ab, saepe earum recusandae.',
+        },
+        {
+          logo: 'fa-regular fa-briefcase',
+          skill: 'Productivity',
+          explanation: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, pariatur iure corrupti voluptate incidunt nulla excepturi voluptas, consequuntur numquam unde eaque officiis minima maxime nobis voluptatum ab, saepe earum recusandae.',
+        },
+        {
+          logo: 'fa-regular fa-gear',
+          skill: 'Life Coaching',
+          explanation: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates, pariatur iure corrupti voluptate incidunt nulla excepturi voluptas, consequuntur numquam unde eaque officiis minima maxime nobis voluptatum ab, saepe earum recusandae.',
         },
       ],
     }

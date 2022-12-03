@@ -16,8 +16,12 @@ import {faLinkedin} from '@fortawesome/free-brands-svg-icons';
 import {faInstagram} from '@fortawesome/free-brands-svg-icons';
 import {faFacebook} from '@fortawesome/free-brands-svg-icons';
 import {faTwitter} from '@fortawesome/free-brands-svg-icons';
+import {faThumbsUp} from '@fortawesome/free-regular-svg-icons';
+import {faGear} from '@fortawesome/free-regular-svg-icons';
+import {faRocket} from '@fortawesome/free-regular-svg-icons';
+import {faBriefcase} from '@fortawesome/free-regular-svg-icons';
 
-library.add(faLinkedin, faInstagram, faFacebook, faTwitter);
+library.add(faLinkedin, faInstagram, faFacebook, faTwitter, faThumbsUp, faGear, faRocket, faBriefcase);
 
 Vue.config.productionTip = false
 
