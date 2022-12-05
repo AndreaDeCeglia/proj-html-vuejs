@@ -1,10 +1,13 @@
 <template>
   <div id="app">
+    <!-- <font-awesome-icon :icon="el.nomeicona" /> -->
     <!-- here there are my 3 main components -->
-    <div v-for=" n in socialsArray" :key="n" > {{el}} </div>
+    <!-- <div v-for=" n in socialsArray" :key="n" > {{el}} </div> -->
     
     <!-- HeaderComp -->
-    <HeaderComp/>
+    <HeaderComp
+      :navbarArray="navbarArray"
+    />
 
     <!-- MainComp -->
     <MainComp/>
@@ -225,10 +228,20 @@ export default {
 </script>
 
 <style lang="scss">
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 }
+
+@import './assets/css/utility.scss';
+
 </style>
