@@ -36,7 +36,7 @@ export default {
     #leftDiscount{
         width: 50%;
         h2{
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             span{
                 color: white;
             };
