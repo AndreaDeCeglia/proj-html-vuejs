@@ -1,7 +1,9 @@
 <template>
     <main>
+       
         <!-- jumbotron section -->
       <div id="jumbotron">
+        
         <!-- jumbotron script -->
         <div id="jumboscript">
             <h1>
@@ -11,16 +13,29 @@
                 A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.
             </p>
         </div>
+        <!-- jumboscript closure -->
+        
+        <!-- jumbotron's discount section -->
+        <div id="discountContainer">
+            <DiscountComp/>
+        </div>
+        <!-- discount closure -->
       </div>
+      <!-- jumbotron closure -->
     </main>
 </template>
   
 <script>
+import DiscountComp from './DiscountComp.vue'
+
 export default {
     name: 'MainComp',
     props: {
       msg: String
-    }
+    },
+    components: {
+        DiscountComp,
+    },
 }
 </script>
   
@@ -47,12 +62,20 @@ export default {
             font-size: 2.5rem;
         };
         span{
-            color: #F2B71D;
+            color: #f2b71d;
         };
         p{
             font-size: .7rem;
         };
-    }
+    };
+
+    #discountContainer{
+        width: 100%;
+        margin: auto;
+        position: absolute;
+        bottom: -10%;
+    };
+
 }
 
 </style>
