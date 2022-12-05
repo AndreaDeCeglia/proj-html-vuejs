@@ -2,7 +2,7 @@
     <main>
        
         <!-- jumbotron section -->
-      <div id="jumbotron">
+      <section id="jumbotron">
         
         <!-- jumbotron script -->
         <div id="jumboscript">
@@ -20,11 +20,11 @@
             <DiscountComp/>
         </div>
         <!-- discount closure -->
-      </div>
+      </section>
       <!-- jumbotron closure -->
 
       <!-- founder presentation's section -->
-      <div id="founder" class="container-70 flex-row justify-around align-start margin80-0 padding-2">
+      <section id="founder" class="container-70 flex-row justify-around align-start margin80-0 padding-2">
         <!-- left part -->
         <div id="founderLeft" class="basis-39">
             <h2>
@@ -38,21 +38,47 @@
                 A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary
             </p>
         </div>
-      </div>
+      </section>
       <!-- founder sec. closure -->
+
+      <!-- new courses section -->
+      <section id="newCourses" class="padding-2">
+        <h2 class="margin20-0">
+            New Courses
+        </h2>
+
+        <!-- cards section -->
+        <div class="container-70 flex-row justify-around wrap">
+            <NewCourseCard
+                v-for="(element, index) in newCoursesArray"
+                :key="index"
+                :NewCourse="element"
+                class="basis-30 margin20-0"
+            />
+        </div>
+        <!-- cards closure -->
+
+        <button class="margin20-0">
+            LOAD MORE
+        </button>
+
+      </section>
+      <!-- new courses closure -->
     </main>
 </template>
   
 <script>
 import DiscountComp from './DiscountComp.vue'
+import NewCourseCard from './NewCourseCard.vue'
 
 export default {
     name: 'MainComp',
     props: {
-      msg: String
+      newCoursesArray: Array,
     },
     components: {
         DiscountComp,
+        NewCourseCard,
     },
 }
 </script>
@@ -110,6 +136,19 @@ export default {
     };
     p{
         font-size: .9rem;
+    };
+};
+
+// ****** New Courses Style ********
+#newCourses{
+    background-color: #E0E7E5;
+
+    button{
+        font-size: .7rem;
+        padding: 2% 5%;
+        border-radius: 50px;
+        color: white;
+        background-color: #EBB024;
     };
 };
 

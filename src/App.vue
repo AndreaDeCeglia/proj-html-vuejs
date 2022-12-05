@@ -10,7 +10,9 @@
     />
 
     <!-- MainComp -->
-    <MainComp/>
+    <MainComp
+      :newCoursesArray="newCoursesArray"
+    />
 
     <!-- FooterComp -->
     <FooterComp/>
