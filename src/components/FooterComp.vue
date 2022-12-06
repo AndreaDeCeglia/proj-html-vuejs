@@ -1,9 +1,9 @@
 <template>
   <footer class="txt-left padding30-0">
-    <div class="container-70 flex-row">
+    <div class="container-70 flex-row padding-2">
         
         <!-- about section -->
-        <div class="basis-25 flex-column justify-between align-start">
+        <div class="basis-25 flex-column justify-between align-start padding-2">
             <h4>
                 {{ aboutObj.title }}
             </h4>
@@ -18,7 +18,7 @@
         </div>
         
         <!--  contact section -->
-        <div class="basis-25">
+        <div class="basis-25 padding-2">
             <h4>
                 {{ contactObj.title }}
             </h4>
@@ -36,15 +36,37 @@
         </div>
         
         <!-- pages section -->
-        <div class="basis-25"></div>
+        <div class="basis-25 padding-2">
+            <h4>
+                PAGES
+            </h4>
+            <ul class="flex-column wrap">
+                <li 
+                    v-for="n in pagesArray"
+                    :key="n"
+                    class="basis1-3 margin20-0"
+                >
+                    {{ n }}
+                </li>
+            </ul>
+        </div>
         
         <!-- blogs section -->
-        <div class="basis-25"></div>
+        <div class="basis-25 flex-column justify-around">
+            <BlogComp
+                v-for="(element, index) in blogObj"
+                :key="index"
+                :blogObj="element"
+            />
+        </div>
     </div>
   </footer>
 </template>
 
 <script>
+
+import BlogComp from './BlogComp.vue'
+
 export default {
     name: 'FooterComp',
     props: {
@@ -52,6 +74,9 @@ export default {
         contactObj: Object,
         pagesArray: Array,
         blogArray: Array,
+    },
+    components: {
+        BlogComp,
     },
 }
 </script>
