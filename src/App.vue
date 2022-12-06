@@ -7,12 +7,15 @@
     <!-- HeaderComp -->
     <HeaderComp
       :navbarArray="navbarArray"
+      :socialsArray="socialsArray"
     />
 
     <!-- MainComp -->
     <MainComp
       :newCoursesArray="newCoursesArray"
       :whyArray="whyArray"
+      :coursesNumbersArray="coursesNumbersArray"
+      
     />
 
     <!-- FooterComp -->
@@ -68,8 +71,9 @@ export default {
       ],
 
       //Array containing icons
+      //absolutelly useless
       socialsArray: [
-        'fa-brands fa-linkedin',
+        '<i class="fa-brands fa-linkedin"></i>',
         'fa-brands fa-instagram',
         'fa-brands fa-facebook',
         'fa-brands fa-twitter',

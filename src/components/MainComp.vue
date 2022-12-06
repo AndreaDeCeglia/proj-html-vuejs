@@ -114,6 +114,20 @@
         </div>
       </section>
       <!-- why my courses closure -->
+
+      <!-- courses' numbers section -->
+      <section id="numbers" class="padding100-0">
+        <div class="container-70 margin100-0 flex-row justify-between">
+            <CoursesNumbers 
+                id="singleStatistic"
+                class="flex-row justify-around padding-2"
+                v-for="(element, index) in coursesNumbersArray"
+                :key="index"
+                :statistic="element"
+            />
+        </div>
+      </section>
+      <!-- courses' numbers section -->
     </main>
 </template>
   
@@ -121,17 +135,20 @@
 import DiscountComp from './DiscountComp.vue'
 import NewCourseCard from './NewCourseCard.vue'
 import WhyCard from './WhyCard.vue'
+import CoursesNumbers from './CoursesNumbers.vue'
 
 export default {
     name: 'MainComp',
     props: {
       newCoursesArray: Array,
       whyArray: Array,
+      coursesNumbersArray: Array,
     },
     components: {
         DiscountComp,
         NewCourseCard,
         WhyCard,
+        CoursesNumbers,
     },
 }
 </script>
@@ -239,6 +256,13 @@ export default {
     };
 
     
+};
+
+// **** courses' numbers style ***** */
+#numbers{
+    background-image: url('./../assets/img/counter-1919x1101.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 };
 
 </style>
