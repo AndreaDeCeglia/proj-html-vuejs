@@ -22,6 +22,8 @@
     <FooterComp
       :aboutObj="aboutObj"
       :contactObj="contactObj"
+      :pagesArray="pagesArray"
+      :blogArray="blogArray"
     />
 
   </div>
@@ -210,6 +212,7 @@ export default {
       },
 
       contactObj: {
+        title: 'CONTACT',
         address: 'USA, Callifornia 20, First Avenue, Callifornia',
         tel: 'Tel.: +1 212 458 300 32',
         fax: 'Fax: +1 212 375 24 14',
