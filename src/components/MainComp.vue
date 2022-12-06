@@ -97,21 +97,41 @@
         
       </section>
       <!-- get my book closure -->
+
+      <!-- why my courses section -->
+      <section id="whyMyCourses" class="padding30-0">
+        <div class="container-60">
+            <h2>
+                Why my Courses?
+            </h2>
+            <div class="flex-row wrap">
+                <WhyCard
+                    v-for="(element, index) in whyArray"
+                    :key="index"
+                    :singleWhy="element"
+                />
+            </div>
+        </div>
+      </section>
+      <!-- why my courses closure -->
     </main>
 </template>
   
 <script>
 import DiscountComp from './DiscountComp.vue'
 import NewCourseCard from './NewCourseCard.vue'
+import WhyCard from './WhyCard.vue'
 
 export default {
     name: 'MainComp',
     props: {
       newCoursesArray: Array,
+      whyArray: Array,
     },
     components: {
         DiscountComp,
         NewCourseCard,
+        WhyCard,
     },
 }
 </script>

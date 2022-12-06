@@ -12,6 +12,7 @@
     <!-- MainComp -->
     <MainComp
       :newCoursesArray="newCoursesArray"
+      :whyArray="whyArray"
     />
 
     <!-- FooterComp -->
@@ -129,7 +130,7 @@ export default {
       ],
 
       //whyMyCoursesArray with courses' specificies
-      whyMyCoursesArray: [
+      whyArray: [
         {
           logo: 'fa-regular fa-thumbs-up',
           skill: 'Entrapreneurship',
