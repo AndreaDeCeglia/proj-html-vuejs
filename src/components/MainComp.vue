@@ -128,6 +128,19 @@
         </div>
       </section>
       <!-- courses' numbers section -->
+
+      <!-- what students say in Slider section -->
+      <section class="container-50 padding50-0">
+        <!-- title spot -->
+        <h2 class="margin-bottom20">
+            What Students Say
+        </h2>
+        <!-- Carusel spot -->
+        <CaruselComp
+            :studentsArray="studentsArray"
+        />
+      </section>
+      <!-- slider closure -->
     </main>
 </template>
   
@@ -136,6 +149,7 @@ import DiscountComp from './DiscountComp.vue'
 import NewCourseCard from './NewCourseCard.vue'
 import WhyCard from './WhyCard.vue'
 import CoursesNumbers from './CoursesNumbers.vue'
+import CaruselComp from './CaruselComp.vue'
 
 export default {
     name: 'MainComp',
@@ -143,12 +157,14 @@ export default {
       newCoursesArray: Array,
       whyArray: Array,
       coursesNumbersArray: Array,
+      studentsArray: Array,
     },
     components: {
         DiscountComp,
         NewCourseCard,
         WhyCard,
         CoursesNumbers,
+        CaruselComp,
     },
 }
 </script>

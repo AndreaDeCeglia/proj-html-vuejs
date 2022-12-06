@@ -15,7 +15,7 @@
       :newCoursesArray="newCoursesArray"
       :whyArray="whyArray"
       :coursesNumbersArray="coursesNumbersArray"
-      
+      :studentsArray="studentsArray"
     />
 
     <!-- FooterComp -->
