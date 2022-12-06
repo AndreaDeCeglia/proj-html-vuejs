@@ -9,7 +9,7 @@
             v-for="(element, indexStudent) in studentsArray" 
             :key="indexStudent"
             :src="require(`./../assets/img/${element.image}`)"
-            @click="select()" 
+            @click="select(indexStudent)" 
             :class="(index == indexStudent) ? 'scale' : ''" 
             alt="..."
         />
@@ -84,6 +84,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
 @import './../assets/css/utility.scss';
 
 #thumbnails{

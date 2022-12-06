@@ -19,7 +19,10 @@
     />
 
     <!-- FooterComp -->
-    <FooterComp/>
+    <FooterComp
+      :aboutObj="aboutObj"
+      :contactObj="contactObj"
+    />
 
   </div>
 </template>
