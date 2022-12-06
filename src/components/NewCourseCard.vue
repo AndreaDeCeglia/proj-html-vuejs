@@ -14,13 +14,13 @@
     <div id="line"></div>
 
     <div id="buttomCard" class="flex-row justify-around align-center">
-        <div>
+        <div class="middle">
             {{ NewCourse.level }}
         </div>
-        <div>
+        <div class="middle">
             {{ NewCourse.lectures }}
         </div>
-        <div>
+        <div class="middle">
             {{ NewCourse.duration }}
         </div>
     </div>
@@ -63,7 +63,7 @@ export default {
 
     #buttomCard{
         color: grey;
-        margin-bottom: 5%;
+        margin-bottom: 10%;
     };
 };
 

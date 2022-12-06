@@ -24,7 +24,7 @@
       <!-- jumbotron closure -->
 
       <!-- founder presentation's section -->
-      <section id="founder" class="container-70 flex-row justify-around align-start margin80-0 padding-2">
+      <section id="founder" class="container-70 flex-row justify-between align-start margin80-0 padding-2">
         <!-- left part -->
         <div id="founderLeft" class="basis-39">
             <h2>
@@ -64,6 +64,39 @@
 
       </section>
       <!-- new courses closure -->
+
+      <!-- get my book section -->
+      <section id="getMyBook">
+
+        <div class="container-70 flex-row justify-center align-end">
+                    <!-- left part with amazon's link for buying the book -->
+            <div id="bookLeft" class="basis-50 flex-column justify-around align-center margin-top50">
+                <div>
+                    <h2>
+                        Get My Exclusive Investing Book just for $19.50
+                    </h2>
+                </div>
+                <div>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad labore velit possimus architecto est, animi officiis nemo porro officia recusandae dolorum autem maxime quas at distinctio saepe sit sed maiores.
+                    </p>
+                </div>
+                <div>
+                    <a href="">
+                        <img src="./../assets/img/amazon.png" alt="">
+                    </a>
+                </div>      
+                
+            </div>
+            
+            <!-- right part with the book's image -->
+            <div id="bookRight" class="basis-50">
+            </div>
+        
+        </div>
+        
+      </section>
+      <!-- get my book closure -->
     </main>
 </template>
   
@@ -145,11 +178,47 @@ export default {
 
     button{
         font-size: .7rem;
-        padding: 2% 5%;
+        padding: 2% 4%;
         border-radius: 50px;
         color: white;
         background-color: #EBB024;
     };
+};
+
+// ******* getMyBook Style ********
+#getMyBook{
+    width: 100%;
+    height: 280px;
+    background-image: url('./../assets/img/slider_1-1917x607-1914x606.jpg');
+    background-size: cover;
+    font-size: .8rem;
+
+    div.container-70{
+        height: 100%;
+
+        #bookLeft{
+            height: 100%;
+            h2{
+                color: #f2b71d;
+            };
+            p{
+                color: white;
+            };
+            a{
+                img{
+                    width: 60%;
+                };
+            };       
+        };
+        #bookRight{
+            background-image: url('./../assets/img/book.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 100%;
+        };
+    };
+
+    
 };
 
 </style>
