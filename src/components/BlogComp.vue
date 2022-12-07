@@ -1,6 +1,14 @@
 <template>
   <div id="blog" class="flex-row">
     <img :src="require(`./../assets/img/${blogObj.image}`)" alt="">
+    <div class="margin-left10">
+        <h6>
+            {{ blogObj.title }}
+        </h6>
+        <p class="txt-gray">
+            {{ blogObj.date }}
+        </p>
+    </div>
   </div>
 </template>
 
@@ -18,7 +26,7 @@ export default {
 
 #blog{
     img{
-        width: 20;
+        width: 50%;
         aspect-ratio: 1/1;
     }
 }

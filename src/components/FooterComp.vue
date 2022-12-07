@@ -36,15 +36,15 @@
         </div>
         
         <!-- pages section -->
-        <div class="basis-25 padding-2">
+        <div class="basis-25 padding-2 txt-left">
             <h4>
                 PAGES
             </h4>
-            <ul class="flex-column wrap">
+            <ul class="flex-row wrap">
                 <li 
                     v-for="n in pagesArray"
                     :key="n"
-                    class="basis1-3 margin20-0"
+                    class="basis-50 margin10-0"
                 >
                     {{ n }}
                 </li>
@@ -52,11 +52,15 @@
         </div>
         
         <!-- blogs section -->
-        <div class="basis-25 flex-column justify-around">
+        <div class="basis-25 padding-2">
+            <h4>
+                BLOG
+            </h4>
             <BlogComp
-                v-for="(element, index) in blogObj"
+                v-for="(element, index) in blogArray"
                 :key="index"
                 :blogObj="element"
+                class="margin10-0"
             />
         </div>
     </div>
@@ -87,6 +91,7 @@ export default {
 
 footer{
     background-color: #F2B71D;
+    font-size: .7rem;
 }
 
 </style>
